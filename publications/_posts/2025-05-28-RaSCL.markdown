@@ -1,0 +1,21 @@
+---
+title:  "RaSCL: Radar to Satellite Crossview Localization"
+date:   2025-04-12 09:26:00 +00:00
+image: /publications/images/rascl.jpg
+video: /publications/images/tunamelt.mp4
+author: "Blerim Abdullai"
+authors: "<strong> Blerim Abdullai </strong>, Tony Wang, Aoran Jiao, Xinyuan Qiao, Florian Shkurti, and Timothy D. Barfoot"
+venue: "ICRA Workshop on Field Robotics <strong>(Spotlight Talk)</strong>"
+page_url: https://arxiv.org/pdf/2504.15899
+bib: |  
+     @misc{abdullai2025rasclradarsatellitecrossview,
+          title={RaSCL: Radar to Satellite Crossview Localization}, 
+          author={Blerim Abdullai and Tony Wang and Xinyuan Qiao and Florian Shkurti and Timothy D. Barfoot},
+          year={2025},
+          eprint={2504.15899},
+          archivePrefix={arXiv},
+          primaryClass={cs.RO},
+          url={https://arxiv.org/abs/2504.15899}, 
+     }
+---
+Global localization against RGB satellite images using only mmWave radar on the ground and an initial guess. 50% reduction in error in suburban environments against comparible baselines while maintaining perfomance in urban environments. First paper to localize against RGB images using mmWave radar in marine environments.

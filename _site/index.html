@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above meta tags must come first -->
+
+  <meta name="author" content="Blerim Abdullai" />
+  <title>Blerim Abdullai</title>
+
+  <!-- Bootstrap CSS 4.6.0, never versions fail to load -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="canonical" href="http://localhost:8080/">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body class="d-flex flex-column">
+  <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light" style="z-index:3;">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <!-- TODO: Use scroll-spy -->
+            
+            <li class='nav-item  active '>
+                <a class="nav-link" href='/#'>
+                    About <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            
+            <li class='nav-item '>
+                <a class="nav-link" href='/#publications'>
+                    Publications 
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+  <div class="container-fluid flex-fill">
+    <div class="row flex-column-reverse flex-md-row py-2">
+    <div class="col-md-8" id="bio">
+        <h1>Blerim Abdullai</h1>
+        <p class="text-justify">
+            Hey there! I am a masters student and the <a href="https://github.com/vsimkus/academic-jekyll">University of Toronto</a> advised by <a href="https://rvl.cs.toronto.edu/">Florian Skurti</a> 
+            and <a href="http://asrl.utias.utoronto.ca/">Tim Barfoot</a> where I have been working on localization using radar for surface vessels. I am broadly interested in computer vision with practical applications 
+            to robotics and have in the past worked with cameras, lidar, radar and sonar.
+        </p>
+        <p class="text-justify">
+            Prior to this I completed my bachelors degree at the University of Illinois at Urbana Champaign (UIUC) in computer engineering, where I worked with Julia Hockenmaier on the Alexa Prize Simbot Challenge.
+            I also worked at Pacific Northwest National Laboratory (PNNL) on detecting fish near turbines using passive sonar and autonomous navigation for a surface vessel.
+        </p>
+        <p style="text-align:center">
+            <a target="_blank" href="https://mailhide.io/">Email</a> &nbsp;/&nbsp;
+            <a href="https://github.com/bl33m">GitHub</a> &nbsp;/&nbsp;
+            <a href="https://twitter.com/">Twitter</a> &nbsp;/&nbsp;
+            <a href="https://scholar.google.com/citations?user=">Google Scholar</a> &nbsp;/&nbsp;
+            <a href="https://www.linkedin.com/in/">LinkedIn </a>
+        </p>
+    </div>
+    <div class="col-md-4" style="z-index:4;">
+        <img alt="profile photo" id="portrait" src="images/babdul3.jpeg">
+    </div>
+</div>
+
+
+<div class="row py-2">
+  <div class="col-md-12" id="publications">
+    <h2>Publications</h2>
+    <br>Hover over some of the publication thumbnails for teaser videos.
+  </div>
+</div>
+
+<div class="row py-2 publication">
+  <div class="col-md-2 col-sm-12 project-thumbnail-parent" align="center" style="position: relative;">
+    
+      <img class="project-thumbnail" src="/tn/publications/images/rascl.jpg" alt="project image"
+           style="position: absolute; top: 0; left: 0; width: 100%; z-index: 2;" />
+      <video class="project-video" muted loop preload="metadata"
+             style="position: absolute; top: 0; left: 0; width: 100%; z-index: 1; display: none;">
+        <source src="/tn/publications/images/tunamelt.mp4" type="video/mp4">
+      </video>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const containers = document.querySelectorAll('.project-thumbnail-parent');
+
+          containers.forEach(container => {
+            const img = container.querySelector('img.project-thumbnail');
+            const vid = container.querySelector('video.project-video');
+            if (img && vid) {
+              container.addEventListener('mouseenter', () => {
+                img.style.display = 'none';
+                vid.style.display = 'block';
+                vid.play();
+              });
+              container.addEventListener('mouseleave', () => {
+                vid.pause();
+                vid.style.display = 'none';
+                img.style.display = 'block';
+              });
+            }
+          });
+        });
+        </script>
+    
+  </div>
+  <div class="col-md-10 col-sm-12 project-description">
+    <h3>RaSCL: Radar to Satellite Crossview Localization</h3>
+    <br>
+    <div class="authors"><strong> Blerim Abdullai </strong>, Tony Wang, Aoran Jiao, Xinyuan Qiao, Florian Shkurti, and Timothy D. Barfoot</div>
+    <em>ICRA Workshop on Field Robotics <strong>(Spotlight Talk)</strong></em>, 2025
+    <br>
+    
+    
+      
+      <a href="https://arxiv.org/pdf/2504.15899">paper</a>
+    
+    
+       / 
+      
+      <a href="" data-toggle="modal" data-target="#publicationBibModal1">bib</a>
+      <div class="modal fade" id="publicationBibModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog d-md-table" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">RaSCL: Radar to Satellite Crossview Localization</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body code text-monospace bib-text">
+              @misc{abdullai2025rasclradarsatellitecrossview,<br />
+     title={RaSCL: Radar to Satellite Crossview Localization}, <br />
+     author={Blerim Abdullai and Tony Wang and Xinyuan Qiao and Florian Shkurti and Timothy D. Barfoot},<br />
+     year={2025},<br />
+     eprint={2504.15899},<br />
+     archivePrefix={arXiv},<br />
+     primaryClass={cs.RO},<br />
+     url={https://arxiv.org/abs/2504.15899}, <br />
+}<br />
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary copy-btn">Copy</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    <p></p>
+    <p class="text-justify">Global localization against RGB satellite images using only mmWave radar on the ground and an initial guess. 50% reduction in error in suburban environments against comparible baselines while maintaining perfomance in urban environments. First paper to localize against RGB images using mmWave radar in marine environments.</p>
+
+  </div>
+</div>
+
+<div class="row py-2 publication">
+  <div class="col-md-2 col-sm-12 project-thumbnail-parent" align="center" style="position: relative;">
+    
+      <img class="project-thumbnail" src="/tn/publications/images/pnnltunamelt.png" alt="project image"
+           style="position: absolute; top: 0; left: 0; width: 100%; z-index: 2;" />
+      <video class="project-video" muted loop preload="metadata"
+             style="position: absolute; top: 0; left: 0; width: 100%; z-index: 1; display: none;">
+        <source src="/tn/publications/images/tunamelt.mp4" type="video/mp4">
+      </video>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const containers = document.querySelectorAll('.project-thumbnail-parent');
+
+          containers.forEach(container => {
+            const img = container.querySelector('img.project-thumbnail');
+            const vid = container.querySelector('video.project-video');
+            if (img && vid) {
+              container.addEventListener('mouseenter', () => {
+                img.style.display = 'none';
+                vid.style.display = 'block';
+                vid.play();
+              });
+              container.addEventListener('mouseleave', () => {
+                vid.pause();
+                vid.style.display = 'none';
+                img.style.display = 'block';
+              });
+            }
+          });
+        });
+        </script>
+    
+  </div>
+  <div class="col-md-10 col-sm-12 project-description">
+    <h3>PNNL-TUNAMELT: Towards automating the detection of interactions with marine energy devices using acoustic camera sensors</h3>
+    <br>
+    <div class="authors">Theodore Nowak, Garrett Staines, and <strong>Blerim Abdullai</strong></div>
+    <em>Submitting to Oceanography and Limnology: Methods</em>, 2025
+    <br>
+    
+    
+    
+    
+    <p></p>
+    <p class="text-justify">Detecing fish in passive sonar footage pointed at a moving turbine to aid marine biologists in assessing fish interactions near turbines. Used classical methods to reduce video length by 70% while keeping 90% of targets.</p>
+
+  </div>
+</div>
+
+<div class="row py-2 publication">
+  <div class="col-md-2 col-sm-12 project-thumbnail-parent" align="center" style="position: relative;">
+    
+      <img class="project-thumbnail" src="/tn/publications/images/flow-1.jpg" alt="project image" />
+    
+  </div>
+  <div class="col-md-10 col-sm-12 project-description">
+    <h3>BEAST: Building an Embodied Action-prediction System with Trajectory data</h3>
+    <br>
+    <div class="authors">Neeloy Chakraborty*, Risham Sidhu*, <strong>Blerim Abdullai*</strong>, Haomiao Chen*, Nikil Ravi*, Abhinav Ankur, Devika Prasad, Julia Hockenmaier</div>
+    <em>Amazon Science</em>, 2023
+    <br>
+    
+    
+      
+      <a href="https://assets.amazon.science/3f/fa/439ec3a84ca7b0117088d5aad14d/revised-amazon-simbot-kingfisher-technical-report.pdf">paper</a>
+    
+    
+       / 
+      
+      <a href="" data-toggle="modal" data-target="#publicationBibModal3">bib</a>
+      <div class="modal fade" id="publicationBibModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog d-md-table" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">BEAST: Building an Embodied Action-prediction System with Trajectory data</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body code text-monospace bib-text">
+              @Article{Urbana-Champaign2023,<br />
+ author = {University of Illinois at Urbana-Champaign},<br />
+ title = {BEAST: Building an embodied action-prediction system with trajectory data},<br />
+ year = {2023},<br />
+ url = {https://www.amazon.science/alexa-prize/proceedings/beast-building-an-embodied-action-prediction-system-with-trajectory-data},<br />
+}<br />
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary copy-btn">Copy</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    <p></p>
+    <p class="text-justify">Our bot in the 2023 Alexa Prize Simbot Challenge. Featured a text based seq2seq tranformer, MaskRCNN for object detection and grounding, and a dialog managing state machine within a realtime deployment across all Alexa devices. 
+Competition was scored based on user ratings. Made it to semi-finals stage.</p>
+
+  </div>
+</div>
+
+
+
+
+
+<div class="row py-2">
+  <div class="col-md-12" id="projects">
+    <h2>Projects</h2>
+  </div>
+</div>
+
+<div class="row py-2 publication">
+  <div class="col-md-2 col-sm-12 project-thumbnail-parent" align="center" style="position: relative;">
+    
+      <img class="project-thumbnail" src="/tn/projects/images/radarnerf.png" alt="project image" />
+    
+  </div>
+  <div class="col-md-10 col-sm-12 project-description">
+    <h3>RadarNeRF: Scene Reconstruction Using mmWave FMCW Radar</h3>
+    <br>
+    <div class="authors">Blerim Abdullai, Yongqiang Wang</div>
+    <em>CSC 2531 Course Project</em>, 2024
+    <br>
+    
+    
+    
+    
+      
+        
+        
+        <a href="https://github.com/bl33m/radarnerf/tree/main">Code</a>
+      
+    
+    <p></p>
+    Modified NeRF rendering to train an MLP for novel view synthesis of imaging radar scans.
+  </div>
+</div>
+
+<div class="row py-2 publication">
+  <div class="col-md-2 col-sm-12 project-thumbnail-parent" align="center" style="position: relative;">
+    
+      <img class="project-thumbnail" src="/tn/projects/images/basedos.png" alt="project image" />
+    
+  </div>
+  <div class="col-md-10 col-sm-12 project-description">
+    <h3>BasedOS</h3>
+    <br>
+    <div class="authors">Blerim Abdullai, Sara Spahi, Matthew Wildenradt, Arpan Raja</div>
+    <em>Course Project ECE 391</em>, 2022
+    <br>
+    
+    
+    
+    
+    <p></p>
+    x86 Linux kernel built from scratch. <strong> 1st place out of 50 teams </strong> in a student design competition. Implemented paging, interrupt handling, round robin scheduling with extra features including a buddy allocator, read/write ext2 file system, a network stack up to UDP sockets, GUI with widgets, and multicore support. Parts of this project include completed course assignment materials and cannot be made public, please email me for the code if interested.
+  </div>
+</div>
+
+<div class="row py-2 publication">
+  <div class="col-md-2 col-sm-12 project-thumbnail-parent" align="center" style="position: relative;">
+    
+      <img class="project-thumbnail" src="/tn/projects/images/tanktrouble.png" alt="project image" />
+    
+  </div>
+  <div class="col-md-10 col-sm-12 project-description">
+    <h3>FPGA Tank Trouble</h3>
+    <br>
+    <div class="authors">Blerim Abdullai, Sara Spahi</div>
+    <em>Course Project ECE 385</em>, 2021
+    <br>
+    
+    
+    
+    
+      
+        
+        
+        <a href="https://github.com/saraspahi/FPGA-Tank-Trouble">Code</a>
+      
+         / 
+        
+        <a href="https://drive.google.com/file/d/1obI_ZMprXXsMqDU-_ivJkB3LX7j4Vkkq/view">Video</a>
+      
+    
+    <p></p>
+    Replica of classic Tank Trouble game implemented in system verilog. Featured procedurally generated mazes, rotation matricies and fixed point arithemtic for game phyiscs, and crossing clock domains for colision checking.
+  </div>
+</div>
+
+<div class="row py-2 publication">
+  <div class="col-md-2 col-sm-12 project-thumbnail-parent" align="center" style="position: relative;">
+    
+      <img class="project-thumbnail" src="/tn/projects/images/sumobotlogo.png" alt="project image" />
+    
+  </div>
+  <div class="col-md-10 col-sm-12 project-description">
+    <h3>Over the Internet Sumobot Outreach</h3>
+    <br>
+    <div class="authors">College of DuPage Robotics Team</div>
+    <em>Outreach Live Demos</em>, 2021
+    <br>
+    
+    
+    
+    
+      
+        
+        
+        <a href="https://github.com/trakyari/multiplayerSumoBot">Code</a>
+      
+         / 
+        
+        <a href="https://youtu.be/_s9nmKtqTO0">Video</a>
+      
+    
+    <p></p>
+    Led the development of an over-the-internet sumobot project with the College of DuPage Engineering and Technology Club. Features ESP8266 powered robots that can be controlled over the internet via the users arrow keys and a custom WebRTC livestream. This project was used as a fun demo in conjunction with an educational presentation for 5 outreach events.
+  </div>
+</div>
+
+
+
+
+  </div>
+
+  <footer class="page-footer navbar-fixed-bottom font-small">
+    <div class="footer-copyright text-center py-3">
+        A <a href="https://github.com/vsimkus/academic-jekyll">Jekyll template</a> inspired by <a href="https://jonbarron.info">Jon Barron's website</a>.
+    </div>
+</footer>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="/publication_effects.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+

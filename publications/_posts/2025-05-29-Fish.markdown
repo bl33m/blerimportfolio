@@ -1,0 +1,11 @@
+---
+title:  "PNNL-TUNAMELT: Towards automating the detection of interactions with marine energy devices
+using acoustic camera sensors"
+date:   2025-04-11 09:26:00 +00:00
+image: /publications/images/pnnltunamelt.png
+video: /publications/images/tunamelt.mp4
+author: "Theodore Nowak"
+authors: "Theodore Nowak, Garrett Staines, and <strong>Blerim Abdullai</strong>"
+venue: "Submitting to Oceanography and Limnology: Methods"
+---
+Detecing fish in passive sonar footage pointed at a moving turbine to aid marine biologists in assessing fish interactions near turbines. Used classical methods to reduce video length by 70% while keeping 90% of targets.
