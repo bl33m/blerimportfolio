@@ -2,7 +2,7 @@
 title:  "RaSCL: Radar to Satellite Crossview Localization"
 date:   2025-04-12 09:26:00 +00:00
 image: /publications/images/rascl.jpg
-video: /publications/images/tunamelt.mp4
+video: /publications/images/rascl.mp4
 author: "Blerim Abdullai"
 authors: "<strong> Blerim Abdullai </strong>, Tony Wang, Aoran Jiao, Xinyuan Qiao, Florian Shkurti, and Timothy D. Barfoot"
 venue: "ICRA Workshop on Field Robotics <strong>(Spotlight Talk)</strong>"
