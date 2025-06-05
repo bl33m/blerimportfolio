@@ -11,4 +11,5 @@ excerpt: "Replica of classic Tank Trouble game implemented in system verilog. Fe
 links:
   - ["Code", "https://github.com/saraspahi/FPGA-Tank-Trouble"]
   - ["Video", "https://drive.google.com/file/d/1obI_ZMprXXsMqDU-_ivJkB3LX7j4Vkkq/view"]
+  - ["Report", "/tn/projects/reports/TankTrouble.pdf"]
 ---

@@ -183,7 +183,7 @@ body {
   background-color: #f8f8f8;
 }
 
-.project-thumbnail-parent {
+  .project-thumbnail-parent {
   position: relative;
   width: 100%;
   aspect-ratio: 4 / 3; /* or 1 / 1, 16 / 9 — choose what fits your thumbnails */
@@ -191,22 +191,3 @@ body {
   background-color: #FFF; /* optional, for better appearance during loading */
 }
 
-.project-thumbnail,
-.project-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-.project-video {
-  z-index: 1;
-  display: none;
-}
-
-.project-thumbnail {
-  z-index: 2;
-}
