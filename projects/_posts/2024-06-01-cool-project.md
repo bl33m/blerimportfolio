@@ -8,5 +8,5 @@ venue: "CSC 2531 Course Project"
 excerpt: "Modified NeRF rendering to train an MLP for novel view synthesis of imaging radar scans."
 links:
   - ["Code", "https://github.com/bl33m/radarnerf/tree/main"]
-  - ["Report", "/tn/projects/reports/RadarNerf.pdf"]
+  - ["Report", "/~blerim/tn/projects/reports/RadarNerf.pdf"]
 ---
