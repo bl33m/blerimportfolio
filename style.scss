@@ -108,29 +108,31 @@ span.highlight {
 }
 
 .project-thumbnail-parent {
-  display: grid;
-  grid-template-columns: 1fr;
-
-  .project-thumbnail {
-    width: auto; 
-    height: auto; 
-    max-width: 100%;
-    
-    grid-row-start: 1;
-    grid-column-start: 1;
-
-    &.pre-hover {
-      z-index:2;
-    }
-    &.post-hover {
-      z-index:1;
-    }
-
-    // @include media-breakpoint-down(sm) {
-    //   max-width: 75%;
-    // }
-  }
+  position: relative;
+  //overflow: hidden;
+  //aspect-ratio: 16 / 9; // consistent aspect ratio
+  width: 100%;
+  max-width: 100%;
+  background: #FFF;
+  border-radius: 0.5em;
 }
+
+.project-thumbnail-parent img.project-thumbnail,
+.project-thumbnail-parent video.project-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
+  transition: opacity 0.3s ease;
+}
+
+.project-thumbnail-parent video.project-video {
+  display: none; /* default hidden */
+}
+
 
 .project-description {
   padding-top: 0.75rem;
@@ -181,13 +183,5 @@ body {
 .code {
   // @extend .text-monospace;
   background-color: #f8f8f8;
-}
-
-  .project-thumbnail-parent {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 3; /* or 1 / 1, 16 / 9 — choose what fits your thumbnails */
-  overflow: hidden;
-  background-color: #FFF; /* optional, for better appearance during loading */
 }
 

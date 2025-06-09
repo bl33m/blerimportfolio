@@ -6,3 +6,11 @@
   link: /
   anchor: '#publications'
   highlight: false
+- name: Projects
+  link: /
+  anchor: '#projects'
+  highlight: false
+- name: Teaching
+  link: /
+  anchor: '#projects'
+  highlight: false

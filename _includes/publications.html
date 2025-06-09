@@ -11,9 +11,9 @@
   <div class="col-md-2 col-sm-12 project-thumbnail-parent" align="center" style="position: relative;">
     {% if post.video %}
       <img class="project-thumbnail" src="{{site.baseurl}}/tn{{post.image}}" alt="project image"
-           style="position: absolute; top: 0; left: 0; width: 100%; z-index: 2;" />
+           style="position: absolute; top: 0; left: 0; height: 100%; z-index: 2;" />
       <video class="project-video" muted loop preload="metadata"
-             style="position: absolute; top: 0; left: 0; width: 100%; z-index: 1; display: none;">
+             style="position: absolute; top: 0; left: 0; height: 100%; z-index: 1; display: none;">
         <source src="{{site.baseurl}}/tn{{post.video}}" type="video/mp4">
       </video>
         <script>
@@ -77,6 +77,8 @@
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
+        
+        
         </div>
       </div>
     {% endif %}
