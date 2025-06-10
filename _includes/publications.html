@@ -2,7 +2,7 @@
 {% if publication_posts.size > 0 %}
 <div class="row py-2">
   <div class="col-md-12" id="publications">
-    <h2>Publications</h2>
+    <h2 class="section-title">Publications</h2>
     <br>Hover over some of the publication thumbnails for teaser videos.
   </div>
 </div>
@@ -54,7 +54,14 @@
     {% assign need_separator = false %}
     {% if post.page_url %}
       {% assign need_separator = true %}
-      <a href="{{ post.page_url }}">paper</a>
+      <a href="{{ post.page_url }}">Page</a>
+    {% endif %}
+    {% if post.links %}
+      {% for link in post.links %}
+        {% if need_separator %} / {% endif %}
+        {% assign need_separator = true %}
+        <a href="{{ link[1] }}">{{ link[0] }}</a>
+      {% endfor %}
     {% endif %}
     {% if post.bib %}
       {% if need_separator %} / {% endif %}
@@ -81,13 +88,6 @@
         
         </div>
       </div>
-    {% endif %}
-    {% if post.links %}
-      {% for link in post.links %}
-        {% if need_separator %} / {% endif %}
-        {% assign need_separator = true %}
-        <a href="{{ link[1] }}">{{ link[0] }}</a>
-      {% endfor %}
     {% endif %}
     <p></p>
     {{ post.excerpt | replace: '<p', '<p class="text-justify"' }}

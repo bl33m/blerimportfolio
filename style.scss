@@ -185,3 +185,37 @@ body {
   background-color: #f8f8f8;
 }
 
+/* --- Teaching section ----------------------------------------------- */
+#teaching {
+  margin-top: 1.5rem;
+
+  .section-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .teaching-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+
+  .teaching-card {
+    border: 1px solid var(--border, #e3e3e3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    background: var(--card-bg, #fff);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .course   { margin: 0; font-size: 1.1rem; }
+    .meta     { margin: 0.15rem 0 0.6rem; color: #666; font-size: 0.9rem; }
+    .blurb    { margin: 0; font-size: 0.95rem; line-height: 1.45; }
+  }
+}
+/* -------------------------------------------------------------------- */

@@ -1,0 +1,20 @@
+# _data/teaching.yml
+- course:  CSC413 – Deep Learning and Neural Networks
+  role:    Teaching Assistant
+  term:    Fall 2023
+  school:  University of Toronto
+  blurb:   Led weekly labs, marked assignments, and ran office hours for ~50 students.
+
+- course:  ECE391 – Computer Systems Engineering
+  url:     https://ece.illinois.edu/academics/courses/ece391
+  role:    Teaching Assistant
+  term:    Fall 2022, Spring 2023
+  school:  UIUC
+  blurb:   Hosted office hours, organized exam review sessions, and graded exams for ~150 students.
+  
+- course:  ECE385 – Digital Systems Laboratory
+  url:     https://ece.illinois.edu/academics/courses/ece385
+  role:    Teaching Assistant
+  term:    Spring 2022
+  school:  UIUC
+  blurb:   Hosted office hours, and review sessions for ~150 students.
