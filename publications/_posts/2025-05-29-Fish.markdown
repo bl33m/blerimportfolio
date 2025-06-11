@@ -7,5 +7,7 @@ video: /publications/images/tunamelt.mp4
 author: "Theodore Nowak"
 authors: "Theodore Nowak, Garrett Staines, and <strong>Blerim Abdullai</strong>"
 venue: "Under Review at Oceanography and Limnology: Methods"
+links:
+  - ["Code", "https://github.com/tsnowak/pnnl-tunamelt"]
 ---
 Detecing fish in passive sonar footage pointed at a moving turbine to aid marine biologists in assessing fish interactions near turbines. Used classical methods to reduce video length by 70% while keeping 90% of targets.
